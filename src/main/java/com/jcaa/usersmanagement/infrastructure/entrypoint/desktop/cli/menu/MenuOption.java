@@ -14,6 +14,11 @@ public enum MenuOption {
   UPDATE_USER(4, "Update user"),
   DELETE_USER(5, "Delete user"),
   LOGIN(6, "Login"),
+  LIST_NINOS(7, "List all children"),
+  FIND_NINO(8, "Find child by identity number"),
+  CREATE_NINO(9, "Create child"),
+  UPDATE_NINO(10, "Update child"),
+  DELETE_NINO(11, "Delete child"),
   EXIT(0, "Exit");
 
   private final int number;
