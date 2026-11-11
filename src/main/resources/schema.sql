@@ -31,3 +31,14 @@ VALUES (
     'ACTIVE'
 );
 
+CREATE TABLE IF NOT EXISTS ninos(
+    identity_number VARCHAR(15) NOT NULL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    enrollment_number VARCHAR(150) NOT NULL,
+    birth_date DATE NOT NULL,
+    admission_date DATE NOT NULL,
+    discharge_date DATE,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
